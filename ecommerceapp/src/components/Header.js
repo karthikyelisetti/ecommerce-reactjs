@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <>
       <nav
-        className="navbar bg-dark"
+        className="navbar navbar-expand-lg bg-body-tertiary bg-dark"
         data-bs-theme="dark"
       >
         <div className="container-fluid">
