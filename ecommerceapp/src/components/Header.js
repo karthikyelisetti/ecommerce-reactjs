@@ -1,5 +1,7 @@
 import React from "react";
 import "./css/Header.css";
+import cart from '../cart.svg';
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -9,8 +11,8 @@ export default function Header() {
         data-bs-theme="dark"
       >
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            Brand Street
+          <a className="navbar-brand">
+            <Link to="/">Brand Street</Link>            
           </a>
           <button
             className="navbar-toggler"
@@ -113,7 +115,7 @@ export default function Header() {
                 <a href="cart.html">
                   <img
                     className="logo"
-                    src="./images/cart-shopping.svg"
+                    src={cart}
                     id="cart-logo"
                     alt="logo"
                   />

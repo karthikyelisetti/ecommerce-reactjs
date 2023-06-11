@@ -1,11 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from './components/Header';
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import Landingpage from "./components/Landingpage";
 
 function App() {
   return (
     <>
-      <Header></Header>
+      <Routes>
+        <Route path="/" element={<Landingpage />} />
+      </Routes>
     </>
   );
 }
