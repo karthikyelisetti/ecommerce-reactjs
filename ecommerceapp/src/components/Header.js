@@ -1,6 +1,6 @@
 import React from "react";
 import "./css/Header.css";
-import cart from '../cart.svg';
+import cart from "../cart.svg";
 import { Link } from "react-router-dom";
 
 export default function Header() {
@@ -29,18 +29,12 @@ export default function Header() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a
-                  className="nav-link active"
-                  aria-current="page"
-                >
+                <a className="nav-link active" aria-current="page">
                   <Link to="/">Home</Link>
                 </a>
               </li>
               <li className="nav-item">
-                <a
-                  className="nav-link active"
-                  aria-current="page"
-                >
+                <a className="nav-link active" aria-current="page">
                   <Link to="/electronics">Electronics</Link>
                 </a>
               </li>
@@ -50,7 +44,7 @@ export default function Header() {
                   aria-current="page"
                   href="fashion.html"
                 >
-                  Fashion
+                  <Link to="/fashion">Fashion</Link>
                 </a>
               </li>
               <li className="nav-item">
@@ -111,15 +105,10 @@ export default function Header() {
 
             <div className="shopping-cart">
               <div>
-                <a href="cart.html">
-                  <img
-                    className="logo"
-                    src={cart}
-                    id="cart-logo"
-                    alt="logo"
-                  />
+                <Link to="/cart">
+                  <img className="logo" src={cart} id="cart-logo" alt="logo" />
                   <span id="quantity">0</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
