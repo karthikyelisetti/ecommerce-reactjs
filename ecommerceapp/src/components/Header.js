@@ -12,7 +12,8 @@ export default function Header() {
       >
         <div className="container-fluid">
           <a className="navbar-brand">
-            <Link to="/">Brand Street</Link>            
+            {/* <Link to="/">Brand Street</Link> */}
+            Brand Street
           </a>
           <button
             className="navbar-toggler"
@@ -31,18 +32,16 @@ export default function Header() {
                 <a
                   className="nav-link active"
                   aria-current="page"
-                  href="index.html"
                 >
-                  Home
+                  <Link to="/">Home</Link>
                 </a>
               </li>
               <li className="nav-item">
                 <a
                   className="nav-link active"
                   aria-current="page"
-                  href="electronics.html"
                 >
-                  Electronics
+                  <Link to="/electronics">Electronics</Link>
                 </a>
               </li>
               <li className="nav-item">

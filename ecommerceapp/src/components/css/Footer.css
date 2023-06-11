@@ -1,0 +1,30 @@
+.footer {
+  color: #e2e2e2;
+  font-size: 14px;
+  background: linear-gradient(to right, #0d4343, #345d55);
+  margin-top: 100px;
+}
+li a .nav-link {
+  color: #fff;
+}
+
+.product-sec {
+  margin: 0 auto;
+}
+.product-title {
+  color: #50376d;
+  border-bottom: 4px double rgb(149, 141, 84);
+  font-family: "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
+    Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+}
+.category-list {
+  text-transform: capitalize;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.category-list:hover {
+  font-size: 18px;
+  color: #382547;
+}

@@ -1,0 +1,27 @@
+.btn-product {
+  margin-left: 10px;
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  padding: 10px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, #c5e1ef, #fff);
+  margin: 0 auto;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card-wrapper .card {
+    width: 300px;
+    height: 180px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 0;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  }
+  .card-wrapper .card .card-body {
+    background: linear-gradient(to right, #c5e1ef, #fff);
+  }
