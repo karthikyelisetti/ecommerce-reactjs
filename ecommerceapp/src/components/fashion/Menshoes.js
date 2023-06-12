@@ -13,7 +13,7 @@ export default function Tops() {
     const apicalling = async () => {
       try {
         let response = await axios.get(
-          "https://dummyjson.com/products/category/tops"
+          "https://dummyjson.com/products/category/mens-shoes"
         );
         setProduct(response.data.products);
       } catch (error) {

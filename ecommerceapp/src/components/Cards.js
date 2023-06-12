@@ -1,5 +1,6 @@
 import React from "react";
 import "./css/Cards.css";
+import currency from "../images/currencyrupee.svg"
 
 export default function Cards(props) {
   return (
@@ -12,11 +13,12 @@ export default function Cards(props) {
       />
       <div className="card-body">
         <h5 className="card-title">{props.title}</h5>
-        <p className="card-text">{props.description}</p>
+        <p className="card-price">Price: <img src={currency} />{props.price}</p>
+        <p className="card-text">{props.description}</p>        
       </div>
       <div className="btn-product">
-      <button className="me-3">Add to cart</button>
-      <button className="me-3">View details</button>
+      <button type="button" className="btn btn-dark me-3">Add to cart</button>
+      <button type="button" className="btn btn-dark me-3">View details</button>
       </div>
     </div>
   );

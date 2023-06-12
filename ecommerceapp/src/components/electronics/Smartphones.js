@@ -31,11 +31,12 @@ export default function Smartphones() {
                 title={element.title}
                 image={element.images[0]}
                 description={element.description}
+                price={element.price}
               />
             );
           })
         ) : (
-          <div>No Product Data</div>
+          <div></div>
         )}
       </div>
   );
