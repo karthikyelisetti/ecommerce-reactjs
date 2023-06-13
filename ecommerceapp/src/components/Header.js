@@ -2,7 +2,6 @@ import React from "react";
 import "./css/Header.css";
 import cart from "../cart.svg";
 import { Link } from "react-router-dom";
-import Cards from "./Cards";
 
 
 export default function Header() {
@@ -108,7 +107,7 @@ export default function Header() {
               <div>
                 <Link to="/cart">
                   <img className="logo" src={cart} id="cart-logo" alt="logo" />
-                  <span id="quantity">{num}</span>
+                  <span id="quantity">0</span>
                 </Link>
               </div>
             </div>

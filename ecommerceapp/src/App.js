@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { useState } from "react";
 import "./App.css";
 import Landingpage from "./components/Landingpage";
 import Cart from "./components/Cart";
@@ -10,6 +11,12 @@ import Automotives from "./components/products/automotives/Automotives";
 import Beautycare from "./components/products/beautycare/Beautycare";
 
 function App() {
+  const [num, setNum ] = useState(0);
+
+  function addToCart() {
+    setNum(num+1);
+    console.log(num);
+  }
   return (
     <>
       <Routes>
