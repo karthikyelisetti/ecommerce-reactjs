@@ -4,7 +4,7 @@ import "../css/Cards.css";
 import "../css/Landingpage.css";
 import Cards from "../Cards";
 
-export default function Tops() {
+export default function Menshirts() {
   const [counter, setCounter] = useState(0);
   const [product, setProduct] = useState([]);
   let count = 0;

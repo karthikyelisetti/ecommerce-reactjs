@@ -42,7 +42,6 @@ export default function Header() {
                 <a
                   className="nav-link active"
                   aria-current="page"
-                  href="fashion.html"
                 >
                   <Link to="/fashion">Fashion</Link>
                 </a>
@@ -51,9 +50,8 @@ export default function Header() {
                 <a
                   className="nav-link active"
                   aria-current="page"
-                  href="home-furnish.html"
                 >
-                  Furnishing
+                  <Link to="/furnishing">Furnishing</Link>
                 </a>
               </li>
               <li className="nav-item">
