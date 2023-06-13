@@ -58,9 +58,8 @@ export default function Header() {
                 <a
                   className="nav-link active"
                   aria-current="page"
-                  href="groceries.html"
                 >
-                  Groceries
+                  <Link to="/groceries">Groceries</Link>
                 </a>
               </li>
               <li className="nav-item">

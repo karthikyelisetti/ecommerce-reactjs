@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "../css/Cards.css";
-import "../css/Landingpage.css";
-import Cards from "../Cards";
+import "../../css/Cards.css";
+import "../../css/Landingpage.css";
+import Cards from "../../Cards";
 
-export default function Laptops() {
+export default function Smartphones() {
   const [counter, setCounter] = useState(0);
   const [product, setProduct] = useState([]);
   let count = 0;
@@ -12,7 +12,7 @@ export default function Laptops() {
   useEffect(() => {
     const apicalling = async () => {
       try {
-        let response = await axios.get("https://dummyjson.com/products/category/laptops");
+        let response = await axios.get("https://dummyjson.com/products/category/smartphones");
         setProduct(response.data.products);
       } catch (error) {
         console.log(error);

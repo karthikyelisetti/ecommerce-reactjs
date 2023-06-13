@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Landingpage from "./components/Landingpage";
-import Electronics from "./components/electronics/Electronics";
 import Cart from "./components/Cart";
-import Fashion from "./components/fashion/Fashion";
-import Furnishing from "./components/furnishing/Furnishing";
-import Groceries from "./components/groceries/Groceries";
+import Electronics from "./components/products/electronics/Electronics";
+import Fashion from "./components/products/fashion/Fashion";
+import Furnishing from "./components/products/furnishing/Furnishing";
+import Groceries from "./components/products/groceries/Groceries";
 
 function App() {
   return (

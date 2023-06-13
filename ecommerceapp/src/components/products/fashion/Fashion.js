@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../Header';
+import Header from '../../Header';
 import Tops from './Tops';
 import Womensdresses from './Womendresses';
 import Womenshoes from './Womenshoes';
@@ -10,7 +10,7 @@ import Womenwatches from './Womenwatches'
 import Womenbags from './Womenbags';
 import Womenjewellery from './Womenjewellery';
 import Sunglasses from './Sunglasses';
-import Footer from '../Footer';
+import Footer from '../../Footer';
 
 export default function Fashion() {
   return (

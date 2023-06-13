@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "../css/Cards.css";
-import "../css/Landingpage.css";
-import Cards from "../Cards";
+import "../../css/Cards.css";
+import "../../css/Landingpage.css";
+import Cards from "../../Cards";
 
-export default function Womenjewellery() {
+export default function Womenshoes() {
   const [counter, setCounter] = useState(0);
   const [product, setProduct] = useState([]);
   let count = 0;
@@ -13,7 +13,7 @@ export default function Womenjewellery() {
     const apicalling = async () => {
       try {
         let response = await axios.get(
-          "https://dummyjson.com/products/category/womens-jewellery"
+          "https://dummyjson.com/products/category/womens-shoes"
         );
         setProduct(response.data.products);
       } catch (error) {

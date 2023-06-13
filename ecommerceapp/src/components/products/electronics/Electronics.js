@@ -1,8 +1,8 @@
 import React from "react";
 import Smartphones from "./Smartphones";
-import Header from "../Header";
+import Header from "../../Header";
 import Laptops from "./Laptops";
-import Footer from "../Footer";
+import Footer from "../../Footer";
 
 export default function Electronics() {
   return (

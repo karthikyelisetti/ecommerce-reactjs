@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from '../Header';
+import Header from '../../Header';
 import Homedecoration from './Homedecoration';
 import Furniture from './Furniture';
 import Lighting from './Lighting';
-import Footer from '../Footer';
+import Footer from '../../Footer';
 
 export default function Furnishing() {
   return (
