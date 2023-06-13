@@ -5,9 +5,9 @@ import "../../css/Landingpage.css";
 import Cards from "../../Cards";
 
 export default function Homedecoration() {
-  const [counter, setCounter] = useState(0);
+  // const [counter, setCounter] = useState(0);
   const [product, setProduct] = useState([]);
-  let count = 0;
+  // let count = 0;
 
   useEffect(() => {
     const apicalling = async () => {
