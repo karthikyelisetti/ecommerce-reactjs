@@ -28,6 +28,7 @@ export default function Smartphones() {
           product.map((element) => {
             return (
               <Cards
+                id={element.id}
                 title={element.title}
                 image={element.images[0]}
                 description={element.description}
