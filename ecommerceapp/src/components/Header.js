@@ -4,7 +4,8 @@ import cart from "../cart.svg";
 import { Link } from "react-router-dom";
 
 
-export default function Header() {
+export default function Header({counter}) {
+
   return (
     <>
       <nav
@@ -114,6 +115,7 @@ export default function Header() {
           </div>
         </div>
       </nav>
+      <div id="liveAlertPlaceholder"></div>
     </>
   );
 }

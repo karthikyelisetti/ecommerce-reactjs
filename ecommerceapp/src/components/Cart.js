@@ -2,6 +2,12 @@ import React from "react";
 import Header from "./Header";
 
 export default function Cart() {
+  var counter = parseInt(localStorage.getItem("cartCounter"));
+  var cartArr = localStorage.getItem("cartArray");
+  console.log(counter);
+  // document.getElementById("quantity").innerHTML = counter;
+  
+
   return (
     <>
       <Header></Header>

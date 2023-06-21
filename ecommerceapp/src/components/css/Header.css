@@ -60,3 +60,8 @@ nav {
   margin-top: -9px;
   cursor: pointer;
 }
+#liveAlertPlaceholder {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}

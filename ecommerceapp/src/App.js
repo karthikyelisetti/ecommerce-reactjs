@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import { useState } from "react";
 import "./App.css";
 import Landingpage from "./components/Landingpage";
 import Cart from "./components/Cart";
@@ -9,25 +8,21 @@ import Furnishing from "./components/products/furnishing/Furnishing";
 import Groceries from "./components/products/groceries/Groceries";
 import Automotives from "./components/products/automotives/Automotives";
 import Beautycare from "./components/products/beautycare/Beautycare";
+import ViewProduct from "./components/ViewProduct";
 
 function App() {
-  const [num, setNum ] = useState(0);
-
-  function addToCart() {
-    setNum(num+1);
-    console.log(num);
-  }
   return (
     <>
       <Routes>
-        <Route path="/" element={<Landingpage/>} />
-        <Route path="/electronics" element={<Electronics/>} />
-        <Route path="/fashion" element={<Fashion/>} />
-        <Route path="/furnishing" element={<Furnishing/>} />
-        <Route path="/groceries" element={<Groceries/>} />
-        <Route path="/automotives" element={<Automotives/>} />
-        <Route path="/beautycare" element={<Beautycare/>} />
-        <Route path="/cart" element={<Cart/>} />
+        <Route path="/" element={<Landingpage />} />
+        <Route path="/electronics" element={<Electronics />} />
+        <Route path="/fashion" element={<Fashion />} />
+        <Route path="/furnishing" element={<Furnishing />} />
+        <Route path="/groceries" element={<Groceries />} />
+        <Route path="/automotives" element={<Automotives />} />
+        <Route path="/beautycare" element={<Beautycare />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/info/:id" element={<ViewProduct />} />
       </Routes>
     </>
   );
